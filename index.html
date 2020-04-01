@@ -7,8 +7,36 @@
     <title>Tip Calculator</title>
 </head>
 <body>
+    <header>
+        <h1>Tip Calculator</h1>
+        <p>Enter your total bill and we will calculate your tip based on your selected amount!</p>
+    </header>
+
+    <section>
+        <form>
+            <div>
+                <label for="billInput">Total Bill Amount: $</label>
+                <input type="number" id="billInput" class="billInput" placeholder="ex. 80">
+            </div>
+           
+            <div>
+                <label for="tipPercent">Or, enter a custom tip amount: %</label>
+                <input type="number" id="tipPercent" class="tipAmount" placeholder="ex. 80">
+            </div>
+
+            <button type="submit" id="calculate" class="submitButton">Calculate your tip!</button>
+        </form>
+       <div>
+           <p class="tipOutput">Tip: <span id="tip"></span></p>
+           <p class="totalOutput">Total: <span id="total"></span></p>
+       </div>
+
+    </section>
+
     
 
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="script.js"></script>
 </body>
 </html>
