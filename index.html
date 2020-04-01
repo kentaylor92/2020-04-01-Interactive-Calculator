@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Tip Calculator</title>
 </head>
 <body>
     <header>
         <h1>Tip Calculator</h1>
-        <p>Enter your total bill and we will calculate your tip based on your selected amount!</p>
+        <p>Enter the cost of your meal and your desired tip and we will calculate your tip and total cost!</p>
     </header>
 
     <section>
         <form>
-            <div>
-                <label for="billInput">Total Bill Amount: $</label>
-                <input type="number" id="billInput" class="billInput" placeholder="ex. 80">
+            <div class="formFlex">
+                <label for="billInput">Bill:</label>
+                <div>
+                    <p>$</p>
+                    <input type="number" id="billInput" class="billInput" placeholder="ex. 80" required>
+                </div>
             </div>
            
-            <div>
-                <label for="tipPercent">Or, enter a custom tip amount: %</label>
-                <input type="number" id="tipPercent" class="tipAmount" placeholder="ex. 80">
+            <div class="formFlex">
+                <label for="tipPercent">Tip:</label>
+                <div>
+                    <p>%</p>
+                    <input type="number" id="tipPercent" class="tipAmount" placeholder="ex. 18">
+                </div>
             </div>
 
-            <button type="submit" id="calculate" class="submitButton">Calculate your tip!</button>
+            <button type="submit" id="submit" class="submitButton">Calculate your tip!</button>
         </form>
-       <div>
+       <div class="output">
            <p class="tipOutput">Tip: <span id="tip"></span></p>
            <p class="totalOutput">Total: <span id="total"></span></p>
        </div>
-
     </section>
-
-    
-
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="script.js"></script>

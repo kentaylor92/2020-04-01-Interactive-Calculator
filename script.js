@@ -1,15 +1,10 @@
 $(document).ready(function () {
 
-    
-
-  
-
     function tipCalculator() {
         
         const billTotal = $("#billInput").val();
         const tipPercent = $("#tipPercent").val();
-        
-        
+           
         const tip = billTotal * (tipPercent / 100);
         const total = +billTotal + tip;
 
@@ -17,15 +12,11 @@ $(document).ready(function () {
         $("#total").text(total.toFixed(2));
     };
 
-    
-
-
-
-    $('#calculate').on('click', function(e) {
+    $('#submit').on('click', function(e) {
         e.preventDefault();
         tipCalculator();
+        // $('#billInput').val('');
+        $('#tipPercent').val('');
     })
-
-    
-    
+ 
 });
