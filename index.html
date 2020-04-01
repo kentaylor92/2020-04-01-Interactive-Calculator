@@ -8,6 +8,9 @@
     <title>Tip Calculator</title>
 </head>
 <body>
+
+    <!-- Codepen can be found here: https://codepen.io/ken-taylor-codes/pen/NWqmWjj -->
+
     <header>
         <h1>Tip Calculator</h1>
         <p>Enter the cost of your meal and your desired tip and we will calculate your tip and total cost!</p>
@@ -19,7 +22,7 @@
                 <label for="billInput">Bill:</label>
                 <div>
                     <p>$</p>
-                    <input type="number" id="billInput" class="billInput" placeholder="ex. 80" required>
+                    <input type="number" id="billInput" placeholder="ex. 80" required>
                 </div>
             </div>
            
@@ -27,15 +30,15 @@
                 <label for="tipPercent">Tip:</label>
                 <div>
                     <p>%</p>
-                    <input type="number" id="tipPercent" class="tipAmount" placeholder="ex. 18">
+                    <input type="number" id="tipPercent" placeholder="ex. 18">
                 </div>
             </div>
 
             <button type="submit" id="submit" class="submitButton">Calculate your tip!</button>
         </form>
        <div class="output">
-           <p class="tipOutput">Tip: <span id="tip"></span></p>
-           <p class="totalOutput">Total: <span id="total"></span></p>
+           <p>Tip: <span id="tip"></span></p>
+           <p>Total: <span id="total"></span></p>
        </div>
     </section>
 

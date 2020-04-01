@@ -37,7 +37,8 @@ input {
     justify-content: center;
 }
 
-.formFlex div p {
+.formFlex div p,
+.output {
     font-size: 2.5rem;
 }
 
@@ -53,8 +54,4 @@ input {
 .submitButton:hover,
 .submitButton:focus {
     border: 3px solid rgb(241, 79, 79);
-}
-
-.output {
-    font-size: 2.5rem;
 }
